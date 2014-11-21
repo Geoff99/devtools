@@ -12,7 +12,7 @@ before_install:
   - ./travis-tool.sh install_github rstudio/rmarkdown
 install:
   # Ask the Travis script to install a specific branch of my fork of roxygen2
-  - ./travis-tool.sh install_github Geoff99/roxygen2@tests-for-update-collate
+  - ./travis-tool.sh install_github Geoff99/roxygen2
   - ./travis-tool.sh install_deps
   # Install testthat after running install_deps, otherwise devtools itself might be installed from CRAN or c2d4u
   - ./travis-tool.sh install_github hadley/testthat
